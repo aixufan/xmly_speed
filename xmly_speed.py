@@ -1002,7 +1002,7 @@ def serverJ(title, content):
         "text": title,
         "desp": content.replace("\n", "\n\n")+"\n\n [打赏作者](https://github.com/Zero-S1/xmly_speed/blob/master/thanks.md)"
     }
-    response = requests.post(f"https://sc.ftqq.com/{sckey}.send", data=data)
+    response = requests.post(f"https://sctapi.ftqq.com/{sckey}.send", data=data)
     print(response.text)
 
 
